@@ -184,11 +184,10 @@ body,
   }
 
 
-  .h1 {
+  h1 {
     color: $black-color;
     line-height: 80px;
     margin-left: 300px;
-
   }
 
 
@@ -261,7 +260,7 @@ body,
   }
 }
 
-/* ABOUT CONTAINER RESPONSIVE */
+/* ABOUT and VISION CONTAINER RESPONSIVE */
 
 @media (max-width: 991px) {
 
@@ -270,6 +269,14 @@ body,
     #about-text {
       margin-top: 25px;
     }
+
+    h1 {
+      text-align: center;
+      margin-left: 0;
+
+    }
+
+    #about-banner {display: none;}
 
     #dotted {
       display: none;

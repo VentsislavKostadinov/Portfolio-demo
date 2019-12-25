@@ -133,7 +133,7 @@ body,
   background-color: #e60000;
   float: right;
 }
-#about-us .h1 {
+#about-us h1 {
   color: #000000;
   line-height: 80px;
   margin-left: 300px;
@@ -179,10 +179,17 @@ body,
   margin-left: 61px;
 }
 
-/* ABOUT CONTAINER RESPONSIVE */
+/* ABOUT and VISION CONTAINER RESPONSIVE */
 @media (max-width: 991px) {
   #about-us #about-text {
     margin-top: 25px;
+  }
+  #about-us h1 {
+    text-align: center;
+    margin-left: 0;
+  }
+  #about-us #about-banner {
+    display: none;
   }
   #about-us #dotted {
     display: none;
