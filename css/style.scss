@@ -1,0 +1,374 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat&display=swap');
+
+$white-color: #ffffff;
+$black-color: #000000;
+$font-bold: bold;
+$text-center: center;
+$red: #e60000;
+
+body {font-family: Montserrat, Roboto; }
+
+
+/* Navigation*/
+
+.navbar.scrolling-navbar { padding-bottom: 0 !important;}
+
+.navbar {
+
+  margin-top: -12px;
+
+  .navbar-brand {
+
+    #first-name, #second-name {
+   width: 150px;
+ }
+
+    #first-name {
+
+      background: $white-color;
+      color: $black-color !important;
+      font-weight: bold;
+      text-align: center;
+    }
+
+    #second-name {
+
+      color: $red;
+      text-align: center;
+      border-left: 1px solid $white-color;
+      border-right: 1px solid $white-color;
+      border-bottom: 1px solid $white-color;
+    }
+  }
+}
+
+.navbar-expand-lg .navbar-nav .nav-link {
+
+
+  border: 1px solid whitesmoke !important;
+  color: $white-color;
+  font-size: 20px;
+   padding: 15px;
+  letter-spacing: 1px;
+
+   text-align: center ;
+
+  &:hover {
+    //   background-color: whitesmoke;
+    opacity: 0.9;
+    color: $red !important;
+  }
+}
+.navbar-toggler {
+  background-color: transparent;
+}
+
+/* RESPONSIVE DESIGN NAVIGATION */
+
+@media (max-width: 991px) {
+
+  .navbar-expand-lg .navbar-nav .nav-link {
+
+    color: $white-color;
+    border: none !important;
+
+    text-align: $text-center;
+
+    &:hover {
+
+      color: $red;
+    }
+  }
+
+  .pull-right{
+
+    padding-top: 10px;
+  }
+}
+
+/* End NAVIGATION */
+
+.scrolling-navbar {
+  transition: background .5s ease-in-out, padding .5s ease-in-out;
+}
+
+/* Necessary for full page carousel*/
+html,
+body,
+.view {
+  height: 100%;
+}
+
+/* Carousel*/
+.carousel,
+.carousel-item,
+.carousel-item.active {
+  height: 100%;
+}
+
+
+.carousel-inner {
+  height: 100%;
+}
+.carousel-item:nth-child(1) {
+ // background-image: url("../assets/css_coding-wallpaper-1920x1080.jpg");
+  background: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0, 0.6)), url("../assets/laptop2.jpg")  no-repeat, center, center;
+  background-size: cover;
+}
+.carousel-item:nth-child(2) {
+  background: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0, 0.6)), url("../assets/image3.jpg") no-repeat, center, center;
+  background-size: cover;
+
+}
+.carousel-item:nth-child(3) {
+  background: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0, 0.6)), url("../assets/woman-at-the-gym.jpg") no-repeat, center, center;
+  background-size: cover;
+}
+
+.carousel-inner {
+    .carousel-item {
+        .view {
+          .full-bg-img {
+            color: $white-color;
+          }
+        }
+    }
+}
+
+/* CAROUSEL RESPONSIVE */
+
+@media (max-width: 991px) {
+
+  .carousel {
+  .carousel-control-prev-icon,   .carousel-control-next-icon {
+
+    background: transparent !important;
+
+    }
+  }
+}
+
+/* ABOUT SECTION  */
+
+#about-us {
+  background-color: $white-color;
+  margin-top: 50px;
+  margin-bottom: 120px;
+
+ #dotted {
+   background: linear-gradient(90deg, #fff 2px, transparent 1%) center, linear-gradient(#fff 2px, transparent 1%) center, #ccc;
+    background-size: 5px 5px;
+
+    height: 360px;
+   width: 600px;
+
+   margin-top: -455px;
+
+  }
+
+  .img-fluid {
+
+    margin-top: 50px;
+    max-width: 90%;
+
+  }
+
+  /* ABOUT CONTAINER */
+
+  #about-banner {
+    width: 300px;
+    height: 42px;
+    background-color: $red;
+    float: right;
+
+  }
+
+
+  .h1 {
+    color: $black-color;
+    line-height: 80px;
+    margin-left: 300px;
+
+  }
+
+
+  #about-text {
+    margin-top: 80px;
+  }
+
+  .nav-pills {
+    margin-top: 50px;
+
+    .nav-link {
+
+      color: $black-color;
+      background-color: transparent;
+      letter-spacing: 2px;
+      padding-right: 70px;
+      font-weight: bold;
+
+      &:hover {
+
+        // border-bottom: 1px solid $black-color;
+        border-radius: 0px;
+        color: $red;
+
+      }
+
+    }
+  }
+
+  /* VISION CONTAINER */
+
+  #vision {
+
+    .fa-bullseye {
+
+      text-align: center;
+      width: 100%;
+      font-size: 50px;
+      margin-top: 60px;
+
+    }
+
+    #our-vision-head {
+
+      margin-top: 30px;
+      line-height: 0;
+      margin-left: 0;
+      text-align: center;
+
+    }
+
+    .img-gradient{
+
+
+        #red-square {
+        background: $red;
+        width: 550px;
+        height: 450px;
+        float: right;
+      }
+
+      .img-fluid {
+        width: 80%;
+        position: absolute;
+        margin-left: 61px;
+      }
+
+    }
+
+  }
+}
+
+/* ABOUT CONTAINER RESPONSIVE */
+
+@media (max-width: 991px) {
+
+  #about-us {
+
+    #about-text {
+      margin-top: 25px;
+    }
+
+    #dotted {
+      display: none;
+    }
+
+    .img-fluid {
+      max-width: 65%;
+      margin-top: 0;
+    }
+
+   #vision {
+
+     .img-gradient {
+
+       #red-square {
+          display: none;
+       }
+
+       .img-fluid {
+
+         position: relative;
+         margin-left: 0;
+
+       }
+     }
+
+     .fa-bullseye {
+       margin-top: 0;
+     }
+   }
+  }
+
+}
+
+/* PROJECTS SECTION */
+
+#projects {
+
+  background-color:  #0d0d0d;
+  padding-bottom: 100px;
+
+  #red-banner {
+    width: 300px;
+    height: 42px;
+    background-color: $red;
+    float: left;
+
+  }
+  .h1 {
+    color: $white-color;
+   line-height: 72px;
+    margin-left: 20px;
+  }
+
+  .row {
+    justify-content: center;
+     margin-top: 30px;
+
+    .mask {
+
+        &:hover {background: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0, 0.7));}
+
+          .white-text {
+            font-size: 23px;
+            letter-spacing: 1px;
+          }
+      }
+
+    img {
+      margin-left: -4px;
+      width: 370px;
+      height: 250px;
+    }
+
+  }
+}
+
+/* Responsive IMAGES */
+
+@media (max-width: 1366px) {
+
+
+  #projects {
+
+    .row {
+       img {
+         width: 310px;
+       }
+     .mask .white-text {
+          font-size: 19px;
+        //  letter-spacing: 0;
+      }
+    }
+  }
+}
+
+#particles-js {
+
+  height: 100%;
+  background: whitesmoke;
+}
+
