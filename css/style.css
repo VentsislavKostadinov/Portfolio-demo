@@ -250,17 +250,20 @@ body,
 /* Responsive IMAGES */
 #particles-js {
   height: 87%;
-  padding-bottom: 466px;
-  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("../assets/business-remote-work.jpeg") no-repeat, center, center;
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("../assets/business-remote-work.jpeg") no-repeat, center;
   background-size: cover;
+  background-attachment: fixed;
 }
 #particles-js .container {
-  padding-top: 300px;
   color: #ffffff;
+  position: absolute;
+  margin: 180px;
 }
 #particles-js .container h1 {
   font-weight: bold;
   font-size: 70px;
+  top: 50%;
+  left: 50%;
 }
 #particles-js .container h2 {
   font-size: 50px;

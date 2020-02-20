@@ -8,14 +8,15 @@
     <script src="bootstrap/jquery-3.4.1.min.js"></script>
     <script src="bootstrap/popper.min.js"></script>
     <script src="bootstrap/bootstrap.min.js"></script>
-    <script src="js/parallax.min.js"></script>
     <script src="js/wow.min.js"></script>
-    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.8.10/js/mdb.min.js"></script>
+    <script type="text/javascript"
+            src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.8.10/js/mdb.min.js"></script>
     <script src="js/translation.js"></script>
     <script src="js/nav-change-color.js"></script>
     <script src="js/scrolling.js"></script>
     <script src="js/description.js"></script>
-     <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+    <script src="js/jquery.parallax-scroll.js"></script>
 
     <link rel="stylesheet" href="bootstrap/bootstrap.min.css">
     <link rel="stylesheet" href="css/style.css">
@@ -27,13 +28,15 @@
 <body>
 
 <!--Navbar scrolling-navbar fixed-top-->
-<nav class="navbar navbar-expand-lg navbar-dark scrolling-navbar fixed-top" >
+<nav class="navbar navbar-expand-lg navbar-dark scrolling-navbar fixed-top">
 
     <!-- Navbar brand -->
-    <a class="navbar-brand scroll" href="#home"><h1 id="first-name">ULTRA</h1><h1 id="second-name">SITE</h1></a>
+    <a class="navbar-brand scroll" href="#home"><h1 id="first-name">ULTRA</h1>
+        <h1 id="second-name">SITE</h1></a>
 
     <!-- Collapse button -->
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#basicExampleNav" aria-controls="basicExampleNav" aria-expanded="false" aria-label="Toggle navigation">
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#basicExampleNav"
+            aria-controls="basicExampleNav" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
     </button>
 
@@ -47,7 +50,7 @@
                 </a>
             </li>
 
-            <li class="nav-item" >
+            <li class="nav-item">
                 <a class="nav-link lang scroll" href="#about-us" key="about">About us</a>
             </li>
             <li class="nav-item">
@@ -93,7 +96,7 @@
             </div>
         </div>
 
-            <!-- Second slide -->
+        <!-- Second slide -->
         <div class="carousel-item">
             <div class="view">
                 <div class="full-bg-img flex-center">
@@ -126,138 +129,162 @@
 <!--/.Carousel Wrapper-->
 
 
-<section id="about-us" >
+<section id="about-us">
     <div class="container-fluid">
         <div class="row ">
-             <div class="col-lg-5" >
-                 <img class="img-fluid mx-auto d-block" src="assets/computer.jpg" alt="">
-                 <div id="dotted"></div>
-             </div>
-             <div class="col-lg-7" id="about-text">
+            <div class="col-lg-5">
+                <img class="img-fluid mx-auto d-block" src="assets/computer.jpg" alt="">
+                <div id="dotted"></div>
+            </div>
+            <div class="col-lg-7" id="about-text">
 
-                 <div class="wow animated fadeInRight" data-wow-delay="0.8s"><h1>What we do</h1><hr id="about-banner"/></div>
-                 <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
-                     <li class="nav-item">
-                         <a class="nav-link" id="pills-home-tab" data-toggle="pill" href="#pills-home" role="tab" aria-controls="pills-home" aria-selected="true">CREATION</a>
-                     </li>
-                     <li class="nav-item">
-                         <a class="nav-link" id="pills-profile-tab" data-toggle="pill" href="#pills-profile" role="tab" aria-controls="pills-profile" aria-selected="false">ANALYSIS</a>
-                     </li>
-                     <li class="nav-item">
-                         <a class="nav-link" id="pills-contact-tab" data-toggle="pill" href="#pills-contact" role="tab" aria-controls="pills-contact" aria-selected="false">STRATEGY</a>
-                     </li>
-                 </ul>
-                 <hr>
-                 <div class="tab-content" id="pills-tabContent">
-                     <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
+                <div class="wow animated fadeInRight" data-wow-delay="0.8s"><h1>What we do</h1>
+                    <hr id="about-banner"/>
+                </div>
+                <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+                    <li class="nav-item">
+                        <a class="nav-link" id="pills-home-tab" data-toggle="pill" href="#pills-home" role="tab"
+                           aria-controls="pills-home" aria-selected="true">CREATION</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" id="pills-profile-tab" data-toggle="pill" href="#pills-profile" role="tab"
+                           aria-controls="pills-profile" aria-selected="false">ANALYSIS</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" id="pills-contact-tab" data-toggle="pill" href="#pills-contact" role="tab"
+                           aria-controls="pills-contact" aria-selected="false">STRATEGY</a>
+                    </li>
+                </ul>
+                <hr>
+                <div class="tab-content" id="pills-tabContent">
+                    <div class="tab-pane fade show active" id="pills-home" role="tabpanel"
+                         aria-labelledby="pills-home-tab">
                         <p id="text1"></p></div>
-                     <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">
-                         <p id="text3"></p>
-                     </div>
-                     <div class="tab-pane fade" id="pills-contact" role="tabpanel" aria-labelledby="pills-contact-tab">
-                         <p id="text2"></p>
-                     </div>
-                 </div>
-             </div>
+                    <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">
+                        <p id="text3"></p>
+                    </div>
+                    <div class="tab-pane fade" id="pills-contact" role="tabpanel" aria-labelledby="pills-contact-tab">
+                        <p id="text2"></p>
+                    </div>
+                </div>
+            </div>
 
         </div>
     </div>
-<br/><br/>
-<div class="container-fluid" id="vision">
-    <div class="row">
-        <div class="col-lg-5">
-            <i class="fas fa-bullseye"></i>
-           <h1 class="h1" id="our-vision-head">OUR VISION</h1><br/>
+    <br/><br/>
+    <div class="container-fluid" id="vision">
+        <div class="row">
+            <div class="col-lg-5">
+                <i class="fas fa-bullseye"></i>
+                <h1 class="h1" id="our-vision-head">OUR VISION</h1><br/>
 
-            <p id="our-vision-text">The company was founded with one clear vision in mind: To become the no. 1 experts on football.
-                With a unique approach that combines subjective input from highly skilled analysts with innovative modelling techniques,
-                we believe that we can continue to take our understanding of the game to new levels.</p>
-        </div>
+                <p id="our-vision-text">The company was founded with one clear vision in mind: To become the no. 1
+                    experts on football.
+                    With a unique approach that combines subjective input from highly skilled analysts with innovative
+                    modelling techniques,
+                    we believe that we can continue to take our understanding of the game to new levels.</p>
+            </div>
 
-        <div class="col-lg-7 img-gradient">
-            <span class="wow animated fadeInRight" data-wow-delay="0.8s" id="red-square"></span>
-         <img class="img-fluid mx-auto d-block"  src="assets/laptop-notebook.jpg" alt="">
+            <div class="col-lg-7 img-gradient">
+                <span class="wow animated fadeInRight" data-wow-delay="0.8s" id="red-square"></span>
+                <img class="img-fluid mx-auto d-block" src="assets/laptop-notebook.jpg" alt="">
 
+            </div>
         </div>
     </div>
-</div>
 
 </section>
 
 <section id="projects"><br/>
-    <div class="wow animated fadeInLeft" data-wow-delay="0.8s"><hr id="red-banner"/><span class="h1">Our Works</span></div>
+    <div class="wow animated fadeInLeft" data-wow-delay="0.8s">
+        <hr id="red-banner"/>
+        <span class="h1">Our Works</span></div>
     <div class="container-fluid px-0">
         <div class="row no-gutters">
 
             <div class="view overlay zoom col-sm-6 col-md-6 col-lg-4">
-                <a href="https://ventsislavkostadinov.github.io/BritainFootball/" target="_blank"><img src="assets/gallery/400x300/classic championship-400x300.jpg" alt="zoom">
+                <a href="https://ventsislavkostadinov.github.io/BritainFootball/" target="_blank"><img
+                        src="assets/gallery/400x300/classic championship-400x300.jpg" alt="zoom">
                     <div class="mask flex-center waves-effect waves-light">
                         <p class="white-text"><i class="fas fa-link"></i>&nbsp;Classic Championship</p>
-                    </div></a>
+                    </div>
+                </a>
             </div>
 
-           <div class="view overlay zoom col-sm-6 col-md-6 col-lg-4">
-                 <a href="https://ventsislavkostadinov.github.io/colmore-o-neil-construction/" target="_blank"><img src="assets/gallery/400x300/construnction-400x300.jpg" alt="zoom">
+            <div class="view overlay zoom col-sm-6 col-md-6 col-lg-4">
+                <a href="https://ventsislavkostadinov.github.io/colmore-o-neil-construction/" target="_blank"><img
+                        src="assets/gallery/400x300/construnction-400x300.jpg" alt="zoom">
                     <div class="mask flex-center waves-effect waves-light">
                         <p class="white-text"><i class="fas fa-link"></i>&nbsp;Colmore O'Neil Contruction</p>
-                    </div></a>
+                    </div>
+                </a>
             </div>
-             <div class="view overlay zoom col-sm-6 col-md-6 col-lg-4">
-                  <a href="https://ventsislavkostadinov.github.io/Healthy-Food-Supplements/#/gain-muscle-mass" target="_blank"></a><img src="assets/gallery/400x300/healthy-food.jpg" alt="zoom">
-                  <div class="mask flex-center waves-effect waves-light">
-                      <p class="white-text"><i class="fas fa-link"></i>&nbsp;Healthy Food supplements</p>
-                  </div>
-              </div>
-              <div class="view overlay zoom col-sm-6 col-md-6 col-lg-4">
-                  <a href="https://ventsislavkostadinov.github.io/IT-Academy/#/" target="_blank"><img src="assets/gallery/400x300/itacademy.jpg" alt="zoom">
-                      <div class="mask flex-center waves-effect waves-light">
-                          <p class="white-text"><i class="fas fa-link"></i>&nbsp;IT Academy</p>
-                      </div></a>
-              </div>
-              <div class="view overlay zoom col-sm-6 col-md-6 col-lg-4">
-                  <a href="https://ventsislavkostadinov.github.io/Luxury-Home/" target="_blank"><img src="assets/gallery/400x300/luxury%20home.jpg" alt="zoom">
-                      <div class="mask flex-center waves-effect waves-light">
-                          <p class="white-text"><i class="fas fa-link"></i>&nbsp;Luxury Home</p>
-                      </div></a>
-              </div>
-              <div class="view overlay zoom col-sm-6 col-md-6 col-lg-4">
-                  <a href="http://ventsislavportfoliowebsite.free.bg/" target="_blank"><img src="assets/gallery/400x300/my%20porfolio.jpg" alt="zoom">
-                      <div class="mask flex-center waves-effect waves-light">
-                          <p class="white-text"><i class="fas fa-link"></i>&nbsp;Demo Portfolio</p>
-                      </div></a>
-              </div>
-               <div class="view overlay zoom col-sm-6 col-md-6 col-lg-4">
-                    <a href="https://ventsislavkostadinov.github.io/Storm-agency/" target="_blank"><img src="assets/gallery/400x300/storm%20agency.jpg" alt="zoom">
-                        <div class="mask flex-center waves-effect waves-light">
-                            <p class="white-text"><i class="fas fa-link"></i>&nbsp;Storm Agency</p>
-                        </div></a>
+            <div class="view overlay zoom col-sm-6 col-md-6 col-lg-4">
+                <a href="https://ventsislavkostadinov.github.io/Healthy-Food-Supplements/#/gain-muscle-mass"
+                   target="_blank"></a><img src="assets/gallery/400x300/healthy-food.jpg" alt="zoom">
+                <div class="mask flex-center waves-effect waves-light">
+                    <p class="white-text"><i class="fas fa-link"></i>&nbsp;Healthy Food supplements</p>
                 </div>
-                <div class="view overlay zoom col-sm-6 col-md-6 col-lg-4">
-                    <a href="https://github.com/VentsislavKostadinov/Ultra-Gym" target="_blank"><img src="assets/gallery/400x300/ultra%20gym.jpg" alt="zoom">
-                        <div class="mask flex-center waves-effect waves-light">
-                            <p class="white-text"><i class="fas fa-link"></i>&nbsp;Ultra Gym</p>
-                        </div></a>
-                </div>
-              <div class="view overlay zoom col-sm-6 col-md-6 col-lg-4">
-                  <a href="https://ventsislavkostadinov.github.io/HTML-CSS-Animations-assignment-task-2/" target="_blank"><img src="assets/gallery/400x300/ara.jpg" alt="zoom">
-                      <div class="mask flex-center waves-effect waves-light">
-                          <p class="white-text"><i class="fas fa-link"></i>&nbsp;Nature Home</p>
-                      </div></a>
-              </div>
+            </div>
+            <div class="view overlay zoom col-sm-6 col-md-6 col-lg-4">
+                <a href="https://ventsislavkostadinov.github.io/IT-Academy/#/" target="_blank"><img
+                        src="assets/gallery/400x300/itacademy.jpg" alt="zoom">
+                    <div class="mask flex-center waves-effect waves-light">
+                        <p class="white-text"><i class="fas fa-link"></i>&nbsp;IT Academy</p>
+                    </div>
+                </a>
+            </div>
+            <div class="view overlay zoom col-sm-6 col-md-6 col-lg-4">
+                <a href="https://ventsislavkostadinov.github.io/Luxury-Home/" target="_blank"><img
+                        src="assets/gallery/400x300/luxury%20home.jpg" alt="zoom">
+                    <div class="mask flex-center waves-effect waves-light">
+                        <p class="white-text"><i class="fas fa-link"></i>&nbsp;Luxury Home</p>
+                    </div>
+                </a>
+            </div>
+            <div class="view overlay zoom col-sm-6 col-md-6 col-lg-4">
+                <a href="http://ventsislavportfoliowebsite.free.bg/" target="_blank"><img
+                        src="assets/gallery/400x300/my%20porfolio.jpg" alt="zoom">
+                    <div class="mask flex-center waves-effect waves-light">
+                        <p class="white-text"><i class="fas fa-link"></i>&nbsp;Demo Portfolio</p>
+                    </div>
+                </a>
+            </div>
+            <div class="view overlay zoom col-sm-6 col-md-6 col-lg-4">
+                <a href="https://ventsislavkostadinov.github.io/Storm-agency/" target="_blank"><img
+                        src="assets/gallery/400x300/storm%20agency.jpg" alt="zoom">
+                    <div class="mask flex-center waves-effect waves-light">
+                        <p class="white-text"><i class="fas fa-link"></i>&nbsp;Storm Agency</p>
+                    </div>
+                </a>
+            </div>
+            <div class="view overlay zoom col-sm-6 col-md-6 col-lg-4">
+                <a href="https://github.com/VentsislavKostadinov/Ultra-Gym" target="_blank"><img
+                        src="assets/gallery/400x300/ultra%20gym.jpg" alt="zoom">
+                    <div class="mask flex-center waves-effect waves-light">
+                        <p class="white-text"><i class="fas fa-link"></i>&nbsp;Ultra Gym</p>
+                    </div>
+                </a>
+            </div>
+            <div class="view overlay zoom col-sm-6 col-md-6 col-lg-4">
+                <a href="https://ventsislavkostadinov.github.io/HTML-CSS-Animations-assignment-task-2/" target="_blank"><img
+                        src="assets/gallery/400x300/ara.jpg" alt="zoom">
+                    <div class="mask flex-center waves-effect waves-light">
+                        <p class="white-text"><i class="fas fa-link"></i>&nbsp;Nature Home</p>
+                    </div>
+                </a>
+            </div>
         </div>
     </div>
 </section>
 
 
-<section id='particles-js'>
-
-    <div class="container ">
-    <h1>We deliver solutions</h1>
-     <h2>for your business</h2>
+<section id='particles-js' class="bg-holder" data-width="1920" data-height="1080">
+    <div class="container text-center">
+        <h1>We deliver solutions</h1>
+        <h2>for your business</h2>
     </div>
 </section>
-
-
 
 <script>
     new WOW().init();
@@ -267,6 +294,10 @@
     particlesJS.load('particles-js', 'particles.json', function () {
         console.log('callback - particles.js config loaded')
     })
+</script>
+
+<script>
+    $('.bg-holder').parallaxScroll({friction: 0.5});
 </script>
 
 </body>
