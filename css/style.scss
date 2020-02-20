@@ -6,12 +6,16 @@ $font-bold: bold;
 $text-center: center;
 $red: #e60000;
 
-body {font-family: Montserrat, Roboto; }
+body {
+  font-family: Montserrat, Roboto;
+}
 
 
 /* Navigation*/
 
-.navbar.scrolling-navbar { padding-bottom: 0 !important;}
+.navbar.scrolling-navbar {
+  padding-bottom: 0 !important;
+}
 
 .navbar {
 
@@ -20,8 +24,8 @@ body {font-family: Montserrat, Roboto; }
   .navbar-brand {
 
     #first-name, #second-name {
-   width: 150px;
- }
+      width: 150px;
+    }
 
     #first-name {
 
@@ -48,10 +52,10 @@ body {font-family: Montserrat, Roboto; }
   border: 1px solid whitesmoke !important;
   color: $white-color;
   font-size: 20px;
-   padding: 15px;
+  padding: 15px;
   letter-spacing: 1px;
 
-   text-align: center ;
+  text-align: center;
 
   &:hover {
     //   background-color: whitesmoke;
@@ -59,6 +63,7 @@ body {font-family: Montserrat, Roboto; }
     color: $red !important;
   }
 }
+
 .navbar-toggler {
   background-color: transparent;
 }
@@ -80,7 +85,7 @@ body {font-family: Montserrat, Roboto; }
     }
   }
 
-  .pull-right{
+  .pull-right {
 
     padding-top: 10px;
   }
@@ -110,29 +115,32 @@ body,
 .carousel-inner {
   height: 100%;
 }
+
 .carousel-item:nth-child(1) {
- // background-image: url("../assets/css_coding-wallpaper-1920x1080.jpg");
-  background: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0, 0.6)), url("../assets/laptop2.jpg")  no-repeat, center, center;
+  // background-image: url("../assets/css_coding-wallpaper-1920x1080.jpg");
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("../assets/laptop2.jpg") no-repeat, center, center;
   background-size: cover;
 }
+
 .carousel-item:nth-child(2) {
-  background: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0, 0.6)), url("../assets/image3.jpg") no-repeat, center, center;
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("../assets/image3.jpg") no-repeat, center, center;
   background-size: cover;
 
 }
+
 .carousel-item:nth-child(3) {
-  background: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0, 0.6)), url("../assets/woman-at-the-gym.jpg") no-repeat, center, center;
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("../assets/woman-at-the-gym.jpg") no-repeat, center, center;
   background-size: cover;
 }
 
 .carousel-inner {
-    .carousel-item {
-        .view {
-          .full-bg-img {
-            color: $white-color;
-          }
-        }
+  .carousel-item {
+    .view {
+      .full-bg-img {
+        color: $white-color;
+      }
     }
+  }
 }
 
 /* CAROUSEL RESPONSIVE */
@@ -140,9 +148,9 @@ body,
 @media (max-width: 991px) {
 
   .carousel {
-  .carousel-control-prev-icon,   .carousel-control-next-icon {
+    .carousel-control-prev-icon, .carousel-control-next-icon {
 
-    background: transparent !important;
+      background: transparent !important;
 
     }
   }
@@ -155,14 +163,14 @@ body,
   margin-top: 50px;
   margin-bottom: 120px;
 
- #dotted {
-   background: linear-gradient(90deg, #fff 2px, transparent 1%) center, linear-gradient(#fff 2px, transparent 1%) center, #ccc;
+  #dotted {
+    background: linear-gradient(90deg, #fff 2px, transparent 1%) center, linear-gradient(#fff 2px, transparent 1%) center, #ccc;
     background-size: 5px 5px;
 
     height: 360px;
-   width: 600px;
+    width: 600px;
 
-   margin-top: -455px;
+    margin-top: -455px;
 
   }
 
@@ -239,10 +247,10 @@ body,
 
     }
 
-    .img-gradient{
+    .img-gradient {
 
 
-        #red-square {
+      #red-square {
         background: $red;
         width: 550px;
         height: 450px;
@@ -276,7 +284,9 @@ body,
 
     }
 
-    #about-banner {display: none;}
+    #about-banner {
+      display: none;
+    }
 
     #dotted {
       display: none;
@@ -287,95 +297,101 @@ body,
       margin-top: 0;
     }
 
-   #vision {
+    #vision {
 
-     .img-gradient {
+      .img-gradient {
 
-       #red-square {
+        #red-square {
           display: none;
-       }
+        }
 
-       .img-fluid {
+        .img-fluid {
 
-         position: relative;
-         margin-left: 0;
+          position: relative;
+          margin-left: 0;
 
-       }
-     }
+        }
+      }
 
-     .fa-bullseye {
-       margin-top: 0;
-     }
-   }
+      .fa-bullseye {
+        margin-top: 0;
+      }
+    }
   }
-
 }
 
 /* PROJECTS SECTION */
 
 #projects {
 
-  background-color:  #0d0d0d;
-  padding-bottom: 100px;
+  background-color: #0d0d0d;
 
   #red-banner {
     width: 300px;
     height: 42px;
     background-color: $red;
     float: left;
-
   }
+
   .h1 {
     color: $white-color;
-   line-height: 72px;
+    line-height: 72px;
     margin-left: 20px;
+  }
+
+  .px-0 {
+    padding-left: 0 !important;
+    padding-right: 0 !important;
   }
 
   .row {
     justify-content: center;
-     margin-top: 30px;
+    margin-top: 30px;
+
+    img {
+      width: 100%;
+    }
 
     .mask {
 
-        &:hover {background: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0, 0.7));}
-
-          .white-text {
-            font-size: 23px;
-            letter-spacing: 1px;
-          }
+      &:hover {
+        background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7));
       }
 
-    img {
-      margin-left: -4px;
-      width: 370px;
-      height: 250px;
+      .white-text {
+        font-size: 23px;
+        letter-spacing: 1px;
+      }
     }
+  }
 
+  .no-gutters {
+    margin-right: 0;
+    margin-left: 0;
   }
 }
 
 /* Responsive IMAGES */
 
-@media (max-width: 1366px) {
-
-
-  #projects {
-
-    .row {
-       img {
-         width: 310px;
-       }
-     .mask .white-text {
-          font-size: 19px;
-        //  letter-spacing: 0;
-      }
-    }
-  }
-}
-
 #particles-js {
 
-  height: 100%;
-  background: whitesmoke;
+  height: 87%;
+  padding-bottom: 466px;
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("../assets/business-remote-work.jpeg") no-repeat, center, center;
+  background-size: cover;
+
+   .container {
+     padding-top: 300px;
+     color: $white-color;
+
+     h1 {
+       font-weight: bold;
+       font-size: 70px;
+     }
+
+     h2 {
+       font-size: 50px;
+     }
+   }
 }
 

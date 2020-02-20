@@ -212,7 +212,6 @@ body,
 /* PROJECTS SECTION */
 #projects {
   background-color: #0d0d0d;
-  padding-bottom: 100px;
 }
 #projects #red-banner {
   width: 300px;
@@ -225,9 +224,16 @@ body,
   line-height: 72px;
   margin-left: 20px;
 }
+#projects .px-0 {
+  padding-left: 0 !important;
+  padding-right: 0 !important;
+}
 #projects .row {
   justify-content: center;
   margin-top: 30px;
+}
+#projects .row img {
+  width: 100%;
 }
 #projects .row .mask:hover {
   background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7));
@@ -236,24 +242,28 @@ body,
   font-size: 23px;
   letter-spacing: 1px;
 }
-#projects .row img {
-  margin-left: -4px;
-  width: 370px;
-  height: 250px;
+#projects .no-gutters {
+  margin-right: 0;
+  margin-left: 0;
 }
 
 /* Responsive IMAGES */
-@media (max-width: 1366px) {
-  #projects .row img {
-    width: 310px;
-  }
-  #projects .row .mask .white-text {
-    font-size: 19px;
-  }
-}
 #particles-js {
-  height: 100%;
-  background: whitesmoke;
+  height: 87%;
+  padding-bottom: 466px;
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("../assets/business-remote-work.jpeg") no-repeat, center, center;
+  background-size: cover;
+}
+#particles-js .container {
+  padding-top: 300px;
+  color: #ffffff;
+}
+#particles-js .container h1 {
+  font-weight: bold;
+  font-size: 70px;
+}
+#particles-js .container h2 {
+  font-size: 50px;
 }
 
 /*# sourceMappingURL=style.css.map */
