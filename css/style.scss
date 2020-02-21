@@ -407,9 +407,10 @@ body,
 @media (max-width: 767px) {
 
   #particles-js {
-    .container {
+    height: 60vh;
 
-      padding: 0;
+    .container {
+      padding: 69px;
 
       h1 { font-size: 42px;}
       h2 { font-size: 28px;}

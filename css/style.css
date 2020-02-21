@@ -276,8 +276,11 @@ body,
   }
 }
 @media (max-width: 767px) {
+  #particles-js {
+    height: 60vh;
+  }
   #particles-js .container {
-    padding: 0;
+    padding: 69px;
   }
   #particles-js .container h1 {
     font-size: 42px;
