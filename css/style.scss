@@ -371,12 +371,8 @@ body,
   }
 }
 
-/* Responsive IMAGES */
-
-
 #particles-js {
-
-  height: 87%;
+  height: 100vh;
   background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("../assets/business-remote-work.jpeg") no-repeat, center;
   background-size: cover;
   background-attachment: fixed;
@@ -384,13 +380,12 @@ body,
   .container {
     color: $white-color;
     position: absolute;
-    margin: 180px;
+    padding: 162px;
 
     h1 {
       font-weight: bold;
       font-size: 70px;
-      top: 50%;
-      left: 50%;
+      display: block;
     }
 
     h2 {

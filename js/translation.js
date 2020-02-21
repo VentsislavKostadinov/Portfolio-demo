@@ -3,6 +3,7 @@ let langTranslate = {
         'home': 'Home',
         'about': 'About us',
         'projects': 'Projects',
+        'particles': 'Why us',
         'deliver': 'We deliver your stunning website',
         'theme': 'Choose your theme',
         'business': 'Let your business be successful'
@@ -12,6 +13,7 @@ let langTranslate = {
         'home': 'Начало',
         'about': 'За нас',
         'projects': 'Проекти',
+        'particles': 'Защо нас',
         'deliver': 'Ние доставяме вашия зашеметяващ уебсайт',
         'theme': 'Изберете тема',
         'business': 'Нека вашият бизнес бъде успешен'
