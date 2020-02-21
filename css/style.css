@@ -267,4 +267,21 @@ body,
   font-size: 50px;
 }
 
+@media (max-width: 991px) {
+  #particles-js .container h1 {
+    font-size: 42px;
+  }
+  #particles-js .container h2 {
+    font-size: 36px;
+  }
+}
+@media (max-width: 767px) {
+  #particles-js .container h1 {
+    font-size: 42px;
+  }
+  #particles-js .container h2 {
+    font-size: 28px;
+  }
+}
+
 /*# sourceMappingURL=style.css.map */
