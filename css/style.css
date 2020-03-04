@@ -247,9 +247,10 @@ body,
   margin-left: 0;
 }
 
+/* PARTICLES SECTION */
 #particles-js {
   height: 100vh;
-  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("../assets/business-remote-work.jpeg") no-repeat, center;
+  background: linear-gradient(rgba(2, 0, 36, 0.6), rgba(6, 6, 97, 0.6)), url("../assets/business-remote-work.jpeg") no-repeat, center;
   background-size: cover;
   background-attachment: fixed;
 }
@@ -257,6 +258,7 @@ body,
   color: #ffffff;
   position: absolute;
   padding: 162px;
+  margin-top: 50px;
 }
 #particles-js .container h1 {
   font-weight: bold;
@@ -268,8 +270,12 @@ body,
 }
 
 @media (max-width: 991px) {
+  #particles-js {
+    padding-top: 120px;
+  }
   #particles-js .container h1 {
     font-size: 42px;
+    width: 500px;
   }
   #particles-js .container h2 {
     font-size: 36px;
@@ -280,10 +286,14 @@ body,
     height: 60vh;
   }
   #particles-js .container {
-    padding: 69px;
+    padding: 19px;
+    width: 450px;
+    margin-top: -35px;
+    margin-left: 50px;
   }
   #particles-js .container h1 {
     font-size: 42px;
+    width: 423px;
   }
   #particles-js .container h2 {
     font-size: 28px;

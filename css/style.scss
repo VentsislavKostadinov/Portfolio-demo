@@ -6,10 +6,14 @@ $font-bold: bold;
 $text-center: center;
 $red: #e60000;
 
+@mixin images-slider($image) {
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url($image) no-repeat, center, center;
+  background-size: cover;
+}
+
 body {
   font-family: Montserrat, Roboto;
 }
-
 
 /* Navigation*/
 
@@ -48,13 +52,11 @@ body {
 
 .navbar-expand-lg .navbar-nav .nav-link {
 
-
   border: 1px solid whitesmoke !important;
   color: $white-color;
   font-size: 20px;
   padding: 15px;
   letter-spacing: 1px;
-
   text-align: center;
 
   &:hover {
@@ -80,7 +82,6 @@ body {
     text-align: $text-center;
 
     &:hover {
-
       color: $red;
     }
   }
@@ -111,26 +112,20 @@ body,
   height: 100%;
 }
 
-
 .carousel-inner {
   height: 100%;
 }
 
 .carousel-item:nth-child(1) {
-  // background-image: url("../assets/css_coding-wallpaper-1920x1080.jpg");
-  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("../assets/laptop2.jpg") no-repeat, center, center;
-  background-size: cover;
+  @include images-slider('../assets/laptop2.jpg')
 }
 
 .carousel-item:nth-child(2) {
-  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("../assets/image3.jpg") no-repeat, center, center;
-  background-size: cover;
-
+  @include images-slider('../assets/image3.jpg')
 }
 
 .carousel-item:nth-child(3) {
-  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("../assets/woman-at-the-gym.jpg") no-repeat, center, center;
-  background-size: cover;
+  @include images-slider('../assets/woman-at-the-gym.jpg')
 }
 
 .carousel-inner {
@@ -149,9 +144,7 @@ body,
 
   .carousel {
     .carousel-control-prev-icon, .carousel-control-next-icon {
-
       background: transparent !important;
-
     }
   }
 }
@@ -166,19 +159,15 @@ body,
   #dotted {
     background: linear-gradient(90deg, #fff 2px, transparent 1%) center, linear-gradient(#fff 2px, transparent 1%) center, #ccc;
     background-size: 5px 5px;
-
     height: 360px;
     width: 600px;
-
     margin-top: -455px;
-
   }
 
   .img-fluid {
 
     margin-top: 50px;
     max-width: 90%;
-
   }
 
   /* ABOUT CONTAINER */
@@ -188,17 +177,13 @@ body,
     height: 42px;
     background-color: $red;
     float: right;
-
   }
-
 
   h1 {
     color: $black-color;
     line-height: 80px;
     margin-left: 300px;
   }
-
-
   #about-text {
     margin-top: 80px;
   }
@@ -219,9 +204,7 @@ body,
         // border-bottom: 1px solid $black-color;
         border-radius: 0px;
         color: $red;
-
       }
-
     }
   }
 
@@ -235,7 +218,6 @@ body,
       width: 100%;
       font-size: 50px;
       margin-top: 60px;
-
     }
 
     #our-vision-head {
@@ -244,12 +226,9 @@ body,
       line-height: 0;
       margin-left: 0;
       text-align: center;
-
     }
 
     .img-gradient {
-
-
       #red-square {
         background: $red;
         width: 550px;
@@ -371,9 +350,11 @@ body,
   }
 }
 
+/* PARTICLES SECTION */
+
 #particles-js {
   height: 100vh;
-  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("../assets/business-remote-work.jpeg") no-repeat, center;
+  background: linear-gradient(rgba(2, 0, 36, 0.6), rgba(6, 6, 97, 0.6)), url("../assets/business-remote-work.jpeg") no-repeat, center;
   background-size: cover;
   background-attachment: fixed;
 
@@ -381,6 +362,7 @@ body,
     color: $white-color;
     position: absolute;
     padding: 162px;
+    margin-top: 50px;
 
     h1 {
       font-weight: bold;
@@ -397,9 +379,17 @@ body,
 @media (max-width: 991px) {
 
   #particles-js {
+
+    padding-top: 120px;
     .container {
-      h1 { font-size: 42px;}
-      h2 { font-size: 36px;}
+      h1 {
+        font-size: 42px;
+        width: 500px;
+      }
+
+      h2 {
+        font-size: 36px;
+      }
     }
   }
 }
@@ -410,10 +400,18 @@ body,
     height: 60vh;
 
     .container {
-      padding: 69px;
+     padding: 19px;
+      width: 450px;
+      margin-top: -35px;
+      margin-left: 50px;
 
-      h1 { font-size: 42px;}
-      h2 { font-size: 28px;}
+      h1 {
+        font-size: 42px;
+        width: 423px;
+      }
+      h2 {
+        font-size: 28px;
+      }
     }
   }
 }
