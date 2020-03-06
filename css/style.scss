@@ -354,9 +354,8 @@ body,
 
 #particles-js {
   height: 100vh;
-  background: linear-gradient(rgba(2, 0, 36, 0.6), rgba(6, 6, 97, 0.6)), url("../assets/business-remote-work.jpeg") no-repeat, center;
+  background: linear-gradient(rgba(2, 0, 36, 0.6), rgba(6, 6, 97, 0.6)), url("../assets/business-remote-work.jpeg") no-repeat, center, fixed;
   background-size: cover;
-  background-attachment: fixed;
 
   .container {
     color: $white-color;
