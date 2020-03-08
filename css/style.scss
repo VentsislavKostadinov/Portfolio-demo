@@ -357,11 +357,14 @@ body,
   background: linear-gradient(rgba(2, 0, 36, 0.6), rgba(6, 6, 97, 0.6)), url("../assets/business-remote-work.jpeg") no-repeat, center, fixed;
   background-size: cover;
 
+
   .container {
     color: $white-color;
     position: absolute;
     padding: 162px;
     margin-top: 50px;
+    padding-left: 0;
+    padding-right: 0;
 
     h1 {
       font-weight: bold;
@@ -376,37 +379,29 @@ body,
 }
 
 @media (max-width: 991px) {
-
   #particles-js {
 
     padding-top: 120px;
     .container {
       h1 {
-        font-size: 42px;
-        width: 500px;
+        font-size: 56px;
       }
-
       h2 {
-        font-size: 36px;
+        font-size: 42px;
       }
     }
   }
 }
 
 @media (max-width: 767px) {
-
   #particles-js {
-    height: 60vh;
+
 
     .container {
-     padding: 19px;
-      width: 450px;
-      margin-top: -35px;
-      margin-left: 50px;
 
       h1 {
         font-size: 42px;
-        width: 423px;
+
       }
       h2 {
         font-size: 28px;
