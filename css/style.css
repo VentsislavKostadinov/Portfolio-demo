@@ -275,10 +275,10 @@ body,
 }
 @media (max-width: 767px) {
   #particles-js .container-fluid h1 {
-    font-size: 53px;
+    font-size: 40px;
   }
   #particles-js .container-fluid h2 {
-    font-size: 43px;
+    font-size: 30px;
   }
 }
 /* A  new section */
