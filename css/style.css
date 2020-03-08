@@ -249,9 +249,8 @@ body,
 
 /* PARTICLES SECTION */
 #particles-js {
-  height: 100vh;
   background: linear-gradient(rgba(2, 0, 36, 0.6), rgba(6, 6, 97, 0.6)), url("../assets/business-remote-work.jpeg") no-repeat, center, fixed;
-  background-size: cover;
+  background-size: 100% 127% !important;
 }
 #particles-js .container-fluid {
   color: #ffffff;
@@ -281,11 +280,5 @@ body,
     font-size: 30px;
   }
 }
-/* A  new section */
-/* #new-section {
-  background: #1e7e34;
-  background-size: cover;
-  height: 100vh;
-} */
 
 /*# sourceMappingURL=style.css.map */

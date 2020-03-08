@@ -11,6 +11,16 @@ $red: #e60000;
   background-size: cover;
 }
 
+@mixin background-image {
+
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-size: cover;
+  background: no-repeat center center fixed;
+}
+
 body {
   font-family: Montserrat, Roboto;
 }
@@ -353,11 +363,11 @@ body,
 
 /* PARTICLES SECTION */
 
-#particles-js {
+ #particles-js {
 
-  height: 100vh;
+  //height: 100vh;
   background: linear-gradient(rgba(2, 0, 36, 0.6), rgba(6, 6, 97, 0.6)), url("../assets/business-remote-work.jpeg") no-repeat, center, fixed;
-  background-size: cover;
+  background-size: 100% 127% !important;
 
   .container-fluid {
     color: $white-color;
@@ -376,9 +386,10 @@ body,
   }
 }
 
+
 @media (max-width: 991px) {
   #particles-js {
-    //padding-top: 120px;
+
     .container-fluid {
       h1 {
         font-size: 56px;
@@ -405,11 +416,3 @@ body,
     }
   }
 }
-
-/* A  new section */
-
-/* #new-section {
-  background: #1e7e34;
-  background-size: cover;
-  height: 100vh;
-} */
