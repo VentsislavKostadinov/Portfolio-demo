@@ -272,6 +272,8 @@ body,
 
 @media (max-width: 991px) {
   #particles-js {
+    width: 100%;
+    height: 100%;
     padding-top: 120px;
   }
   #particles-js .container h1 {
