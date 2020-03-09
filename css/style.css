@@ -250,7 +250,7 @@ body,
 /* PARTICLES SECTION */
 #particles-js {
   background: linear-gradient(rgba(2, 0, 36, 0.6), rgba(6, 6, 97, 0.6)), url("../assets/business-remote-work.jpeg") no-repeat, center, fixed;
-  background-size: 100% 127% !important;
+  height: 100vh;
 }
 #particles-js .container-fluid {
   color: #ffffff;

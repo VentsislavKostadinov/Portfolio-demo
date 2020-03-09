@@ -367,22 +367,18 @@ body,
 
   //height: 100vh;
   background: linear-gradient(rgba(2, 0, 36, 0.6), rgba(6, 6, 97, 0.6)), url("../assets/business-remote-work.jpeg") no-repeat, center, fixed;
-  background-size: 100% 127% !important;
+  //background-size: 100% 127% !important;
+   height: 100vh;
+
 
   .container-fluid {
     color: $white-color;
     position: absolute;
     padding-top: 250px;
 
+    h1 {font-size: 70px;}
 
-    h1 {
-      font-size: 70px;
-    }
-
-    h2 {
-      font-size: 50px;
-    }
-
+    h2 {font-size: 50px;}
   }
 }
 
