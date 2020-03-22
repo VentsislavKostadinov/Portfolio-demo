@@ -250,7 +250,7 @@ body,
 /* PARTICLES SECTION */
 #particles-js {
   height: 100vh;
-  background: linear-gradient(0deg, rgba(2, 0, 36, 0.6), rgba(6, 6, 97, 0.6)), url("../assets/business-remote-work.jpeg") no-repeat, fixed, center;
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("../assets/business-remote-work.jpeg") no-repeat, fixed, center;
   background-size: cover;
 }
 #particles-js .container-fluid {
@@ -267,10 +267,10 @@ body,
 
 @media (max-width: 991px) {
   #particles-js .container-fluid h1 {
-    font-size: 56px;
+    font-size: 4em;
   }
   #particles-js .container-fluid h2 {
-    font-size: 42px;
+    font-size: 3em;
   }
 }
 @media (max-width: 767px) {
@@ -282,33 +282,57 @@ body,
   }
 }
 #technologies {
-  background: white;
-  margin: 150px;
+  background: #ffffff;
   text-align: center;
+  padding-top: 100px;
+  /* i {
+     display: flex;
+     font-size: 60px;
+     margin: auto;
+     align-items: center;
+     justify-content: center;
+     width: 127px;
+     height: 127px;
+     border-radius: 50%;
+     border: 1px solid black;
+
+     &:hover {
+       animation: flip-icons 1s forwards;
+     }
+   } */
 }
-#technologies i {
-  display: flex;
+#technologies .h1 {
+  text-align: center;
+  font-weight: bold;
+}
+#technologies .h1:hover {
+  color: #4196F0;
+}
+#technologies .container-fluid {
+  padding-top: 50px;
+}
+#technologies .container-fluid i {
   font-size: 60px;
-  margin: auto;
-  align-items: center;
-  justify-content: center;
+  border: 1px solid black;
+  border-radius: 50%;
   width: 127px;
   height: 127px;
-  border-radius: 50%;
-  border: 1px solid black;
+  line-height: 2;
 }
-#technologies i:hover {
+#technologies .container-fluid i:hover {
   animation: flip-icons 1s forwards;
+  color: #4196F0;
+  border: 1px solid #4196F0;
 }
-#technologies p {
+#technologies .container-fluid p {
   font-size: 27px;
   margin-top: 25px;
 }
-#technologies p span {
+#technologies .container-fluid p span {
   display: block;
   font-weight: bold;
 }
-@media (max-width: 1036px) {
+@media (max-width: 1089px) {
   #technologies p {
     font-size: 1em;
   }
