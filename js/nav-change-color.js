@@ -1,38 +1,70 @@
-$(document).ready(function(){
+$(document).ready(function() {
 
-    $(window).scroll(function(){
+    $(window).scroll(function () {
 
         let scroll = $(window).scrollTop();
         let viewWidth = $(window).width();
         let btn = $('#top-button');
 
         // Desktop navigation scroll change opacity
-        
+
         if (scroll > 420) {
-            $(".navbar").css({'background' : '#000000', 'opacity' : '0.7'});
+            $(".navbar").css({'background': '#000000', 'opacity': '0.7'});
+        } else {
+            $(".navbar").css({'background': 'transparent', 'opacity': '1'});
         }
-       else {
-           $(".navbar").css({'background' : 'transparent', 'opacity': '1'});
-       }
 
-       // For Mobile: max-width 991px and scrolling 220px hide navigation and showing pop-tip button - Go to top
+        // For Mobile: max-width 991px and scrolling 220px hide navigation and showing pop-tip button - Go to top
 
-       if(viewWidth <= 991 && scroll > 220) {
-           $('.fixed-top').css({'visibility' : 'hidden'});
-           btn.css({'display' : 'block'});
+        if (viewWidth <= 991 && scroll > 220) {
+            $('.fixed-top').css({'visibility': 'hidden'});
+            btn.css({'display': 'block'});
 
-       } else {
-           $('.fixed-top').css({'visibility' : 'visible'});
-           btn.css({'display' : 'none'});
-       }
+        } else {
+            $('.fixed-top').css({'visibility': 'visible'});
+            btn.css({'display': 'none'});
+        }
 
-      btn.on('click', function (e) {
+        /* btn.on('click', function(e) {
+             e.preventDefault();
+             $('html, body').animate({scrollTop:0}, 600);
+             return false;
+         });  */
+        //document.body.scrollTop = 0;
+        // document.documentElement.scrollTop = 0;
 
-          e.preventDefault();
-          $('html, body').animate({scrollTop:0}, '300');
-      })
+        btn.on('click', function (e) {
 
+            e.preventDefault();
+         window.scrollTo({top: 0, behavior: 'smooth'});
+        });
     });
 
+    // Scrolling
 
+    let scrollLink = $('.scroll');
+
+    // Smooth scrolling
+    scrollLink.click(function (e) {
+        e.preventDefault();
+        $('body, html').animate({
+            scrollTop: $(this.hash).offset().top
+        }, 1000);
+    });
+
+    // Active link switching
+    $(window).scroll(function () {
+        let scrollbarLocation = $(this).scrollTop();
+
+        scrollLink.each(function () {
+
+            let sectionOffset = $(this.hash).offset().top - 20;
+
+            if (sectionOffset <= scrollbarLocation) {
+                $(this).parent().addClass('active');
+                $(this).parent().siblings().removeClass('active');
+            }
+        })
+
+    })
 });
