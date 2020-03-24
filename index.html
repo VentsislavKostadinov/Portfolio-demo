@@ -130,6 +130,10 @@
 </div>
 <!--/.Carousel Wrapper-->
 
+<!-- POP UP BUTTON -->
+
+<button type="button" class= "btn btn-primary" id="top-button"></button>
+
 
 <section id="about-us">
     <div class="container-fluid">
@@ -316,14 +320,19 @@
 
 
     <script>
+
+        // add wow.js
         new WOW().init();
 
+        // add particles
         particlesJS.load('particles-js', 'particles.json', function () {
             console.log('callback - particles.js config loaded')
         });
 
+        // add parallax effect
+        $('.bg-holder').parallaxScroll({friction: 0.3});
 
-        $('.bg-holder').parallaxScroll({friction: 0.5});
+
     </script>
 
 

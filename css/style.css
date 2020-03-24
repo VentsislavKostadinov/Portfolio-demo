@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @import url("https://fonts.googleapis.com/css?family=Montserrat&display=swap");
 body {
   font-family: Montserrat, Roboto;
@@ -108,6 +109,36 @@ body,
     background: transparent !important;
   }
 }
+/* Top Button */
+#top-button {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 30px;
+  z-index: 99;
+  font-size: 18px;
+  border: none;
+  outline: none;
+  background: #e60000 !important;
+  color: #ffffff;
+  cursor: pointer;
+  padding: 15px;
+  width: 4em;
+  height: 4em;
+  border-radius: 50%;
+}
+#top-button:hover {
+  cursor: pointer;
+  background-color: #333;
+}
+#top-button:after {
+  content: "";
+  font-family: FontAwesome;
+  font-size: 1em;
+  vertical-align: middle;
+  color: #fff;
+}
+
 /* ABOUT SECTION  */
 #about-us {
   background-color: #ffffff;
@@ -152,7 +183,7 @@ body,
   font-weight: bold;
 }
 #about-us .nav-pills .nav-link:hover {
-  border-radius: 0px;
+  border-radius: 0;
   color: #e60000;
 }
 #about-us #vision .fa-bullseye {
@@ -281,25 +312,11 @@ body,
     font-size: 30px;
   }
 }
+/* Technologies Section */
 #technologies {
   background: #ffffff;
   text-align: center;
   padding-top: 100px;
-  /* i {
-     display: flex;
-     font-size: 60px;
-     margin: auto;
-     align-items: center;
-     justify-content: center;
-     width: 127px;
-     height: 127px;
-     border-radius: 50%;
-     border: 1px solid black;
-
-     &:hover {
-       animation: flip-icons 1s forwards;
-     }
-   } */
 }
 #technologies .h1 {
   text-align: center;
