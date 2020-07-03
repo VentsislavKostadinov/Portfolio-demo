@@ -12,7 +12,8 @@ body {
   margin-top: -12px;
 }
 
-.navbar .navbar-brand #first-name, .navbar .navbar-brand #second-name {
+.navbar .navbar-brand #first-name,
+.navbar .navbar-brand #second-name {
   width: 150px;
 }
 
@@ -66,8 +67,8 @@ body {
 
 /* End NAVIGATION */
 .scrolling-navbar {
-  -webkit-transition: background .5s ease-in-out, padding .5s ease-in-out;
-  transition: background .5s ease-in-out, padding .5s ease-in-out;
+  -webkit-transition: background 0.5s ease-in-out, padding 0.5s ease-in-out;
+  transition: background 0.5s ease-in-out, padding 0.5s ease-in-out;
 }
 
 /* Necessary for full page carousel*/
@@ -112,7 +113,8 @@ body,
 
 /* CAROUSEL RESPONSIVE */
 @media (max-width: 991px) {
-  .carousel .carousel-control-prev-icon, .carousel .carousel-control-next-icon {
+  .carousel .carousel-control-prev-icon,
+  .carousel .carousel-control-next-icon {
     background: transparent !important;
   }
 }
@@ -369,7 +371,7 @@ body,
 }
 
 #technologies .h1:hover {
-  color: #4196F0;
+  color: #4196f0;
 }
 
 #technologies .container-fluid {
@@ -388,8 +390,8 @@ body,
 #technologies .container-fluid i:hover {
   -webkit-animation: flip-icons 1s forwards;
           animation: flip-icons 1s forwards;
-  color: #4196F0;
-  border: 1px solid #4196F0;
+  color: #4196f0;
+  border: 1px solid #4196f0;
 }
 
 #technologies .container-fluid p {
@@ -434,5 +436,72 @@ body,
     -webkit-transform: rotateY(180deg);
             transform: rotateY(180deg);
   }
+}
+
+#testimonials {
+  background-color: #EEEEEE;
+  padding-top: 40px;
+  padding-bottom: 50px;
+}
+
+#testimonials .wrapper-carousel-fix {
+  margin: auto;
+}
+
+#testimonials .carousel-item {
+  background: none;
+}
+
+#testimonials .carousel-item p {
+  font-size: 18px;
+}
+
+#testimonials .testimonial-carousel .carousel-control {
+  font-size: 5rem;
+  color: rgba(0, 0, 0, 0.6);
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+#testimonials .carousel-control-next {
+  right: -60px;
+}
+
+#testimonials .carousel-control-prev {
+  left: -60px;
+}
+
+#testimonials .testimonial-carousel .carousel-control.right::before {
+  content: "\203a";
+}
+
+#testimonials .testimonial-carousel .carousel-control.left::before {
+  content: "\2039";
+}
+
+#blogs {
+  padding-bottom: 60px;
+}
+
+#blogs h1 {
+  font-weight: bold;
+}
+
+#blogs .carousel-item {
+  background: none;
+}
+
+footer {
+  background: #000000;
+  color: #ffffff;
+  padding-top: 30px;
+  text-align: center;
+}
+
+footer .fab {
+  margin: auto;
+  font-size: 40px;
+  color: #ffffff;
+  padding: 7px;
 }
 /*# sourceMappingURL=style.css.map */
