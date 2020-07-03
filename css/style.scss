@@ -436,13 +436,19 @@ body,
 @media (max-width: 767px) {
   #particles-js {
 
+   .bg-holder {
+    background-attachment: scroll;
+     background-size: 100% 100%;
+   }
+   
     .container-fluid {
+      
       h1 {
-        font-size: 40px;
+        font-size: 50px;
       }
 
       h2 {
-        font-size: 30px;
+        font-size: 45px;
       }
     }
   }
