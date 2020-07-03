@@ -442,6 +442,7 @@ body,
   background-color: #EEEEEE;
   padding-top: 40px;
   padding-bottom: 50px;
+  text-align: center;
 }
 
 #testimonials .wrapper-carousel-fix {
@@ -461,14 +462,6 @@ body,
   color: rgba(0, 0, 0, 0.6);
   -webkit-transition: 0.4s;
   transition: 0.4s;
-}
-
-#testimonials .carousel-control-next {
-  right: -60px;
-}
-
-#testimonials .carousel-control-prev {
-  left: -60px;
 }
 
 #testimonials .testimonial-carousel .carousel-control.right::before {

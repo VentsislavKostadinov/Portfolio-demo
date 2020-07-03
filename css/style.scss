@@ -497,6 +497,7 @@ body,
   background-color: #EEEEEE;
   padding-top: 40px;
   padding-bottom: 50px;
+  text-align: center;
 
   .wrapper-carousel-fix {
     margin: auto;
@@ -518,13 +519,6 @@ body,
 
     
   }
-  .carousel-control-next {
-    right: -60px;
-   }
-
-   .carousel-control-prev {
-    left: -60px;
-   }
 
   .testimonial-carousel .carousel-control.right::before {
     content: "\203a";
