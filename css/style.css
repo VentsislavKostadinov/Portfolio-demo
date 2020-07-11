@@ -12,8 +12,7 @@ body {
   margin-top: -12px;
 }
 
-.navbar .navbar-brand #first-name,
-.navbar .navbar-brand #second-name {
+.navbar .navbar-brand #first-name, .navbar .navbar-brand #second-name {
   width: 150px;
 }
 
@@ -67,8 +66,8 @@ body {
 
 /* End NAVIGATION */
 .scrolling-navbar {
-  -webkit-transition: background 0.5s ease-in-out, padding 0.5s ease-in-out;
-  transition: background 0.5s ease-in-out, padding 0.5s ease-in-out;
+  -webkit-transition: background .5s ease-in-out, padding .5s ease-in-out;
+  transition: background .5s ease-in-out, padding .5s ease-in-out;
 }
 
 /* Necessary for full page carousel*/
@@ -113,8 +112,7 @@ body,
 
 /* CAROUSEL RESPONSIVE */
 @media (max-width: 991px) {
-  .carousel .carousel-control-prev-icon,
-  .carousel .carousel-control-next-icon {
+  .carousel .carousel-control-prev-icon, .carousel .carousel-control-next-icon {
     background: transparent !important;
   }
 }
@@ -346,39 +344,35 @@ body,
 }
 
 @media (max-width: 767px) {
-  #particles-js .bg-holder {
-    background-attachment: scroll;
-    background-size: 100% 100%;
-  }
   #particles-js .container-fluid h1 {
-    font-size: 50px;
+    font-size: 40px;
   }
   #particles-js .container-fluid h2 {
-    font-size: 45px;
+    font-size: 30px;
   }
 }
 
-/* Technologies Section */
-#technologies {
+/* Services */
+#services {
   background: #ffffff;
   text-align: center;
-  padding-top: 100px;
+  padding: 100px 0;
 }
 
-#technologies .h1 {
+#services .h1 {
   text-align: center;
   font-weight: bold;
 }
 
-#technologies .h1:hover {
-  color: #4196f0;
+#services .h1:hover {
+  color: #4196F0;
 }
 
-#technologies .container-fluid {
+#services .container-fluid {
   padding-top: 50px;
 }
 
-#technologies .container-fluid i {
+#services .container-fluid i {
   font-size: 60px;
   border: 1px solid black;
   border-radius: 50%;
@@ -387,31 +381,31 @@ body,
   line-height: 2;
 }
 
-#technologies .container-fluid i:hover {
+#services .container-fluid i:hover {
   -webkit-animation: flip-icons 1s forwards;
           animation: flip-icons 1s forwards;
-  color: #4196f0;
-  border: 1px solid #4196f0;
+  color: #4196F0;
+  border: 1px solid #4196F0;
 }
 
-#technologies .container-fluid p {
+#services .container-fluid p {
   font-size: 27px;
   margin-top: 25px;
 }
 
-#technologies .container-fluid p span {
+#services .container-fluid p span {
   display: block;
   font-weight: bold;
 }
 
 @media (max-width: 1089px) {
-  #technologies p {
+  #services p {
     font-size: 1em;
   }
 }
 
 @media (min-width: 991px) {
-  #technologies .col-md-3 {
+  #services .col-md-3 {
     width: 25%;
   }
 }
@@ -438,10 +432,10 @@ body,
   }
 }
 
+/* Testimonials */
 #testimonials {
   background-color: #EEEEEE;
-  padding-top: 40px;
-  padding-bottom: 50px;
+  padding: 100px 0;
   text-align: center;
 }
 
@@ -472,6 +466,7 @@ body,
   content: "\2039";
 }
 
+/* Blogs */
 #blogs {
   padding: 70px 0px;
 }
@@ -484,6 +479,7 @@ body,
   background: none;
 }
 
+/* Footer */
 footer {
   background: #000000;
   color: #ffffff;
