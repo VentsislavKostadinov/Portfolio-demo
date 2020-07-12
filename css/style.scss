@@ -84,6 +84,16 @@ body {
 
 @media (max-width: 991px) {
 
+  nav {
+    background-color: $black-color !important;
+    opacity: 0.7 !important;
+  }
+
+ #lang-translation-links {
+    padding-top: 0px;
+  }
+ 
+
   .navbar-expand-lg .navbar-nav .nav-link {
 
     color: $white-color;
@@ -560,6 +570,10 @@ body,
 
   .carousel-item {
     background: none;
+  }
+
+  #blog-article-react-logo {
+    height: 32vh;
   }
 }
 
