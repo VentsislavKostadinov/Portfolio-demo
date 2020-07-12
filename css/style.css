@@ -504,4 +504,16 @@ footer .fab {
   color: #ffffff;
   padding: 7px;
 }
+
+.animated {
+  /*CSS transitions*/
+  -webkit-transition-property: none !important;
+  transition-property: none !important;
+  /*CSS transforms*/
+  -webkit-transform: none !important;
+  transform: none !important;
+  /*CSS animations*/
+  -webkit-animation: none !important;
+  animation: none !important;
+}
 /*# sourceMappingURL=style.css.map */
