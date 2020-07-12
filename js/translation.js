@@ -24,7 +24,17 @@ let langTranslate = {
         'The company was founded with one clear vision in mind: we want to be your reliable partner, who is able to ensure your success.',
         'demo-projects-tr': 'Projects',
         'we-deliver-solutions-tr' : 'We Provide Solutions',
-        'elegant-website-tr' : 'for your elegant website'
+        'elegant-website-tr' : 'for your elegant website',
+        'services-tr': 'Services',
+        'website-dev-tr': 'Website Development',
+        'elegant-design-tr' : 'Elegant Design',
+        'page-speed-tr' : 'Page Speed Optimization',
+        'automation-tr' : 'Automation Testing',
+        'testimonials-tr': 'Testimonials',
+        'testimonial1-tr' : '\u0020 I would not hesitate to recommend Ultra Site team to anyone wanting a beautiful and stunning website. Top! \u0020',
+        'testimonial2-tr' : '\u0020 I work in construction for years and as time went on, I had to have my own website to advertise my services. I trusted the Ultra Site and I am very happy. \u0020',
+        'testimnonial3-tr' : '\u0020 Methodical, professional and reliable. Ultra Site are very easy to work with and very helpful. Would recommend them. \u0020',
+        'blog-article-tr' : 'Blog articles'
 
     },
     'bg': {
@@ -51,7 +61,17 @@ let langTranslate = {
         'Компанията е основана с една ясна визия в ума: искаме да бъдем вашият надежден партньор, който е в състояние да гарантира вашия успех.',
         'demo-projects-tr': 'Проекти',
         'we-deliver-solutions-tr' : 'Ние предоставяме решения',
-        'elegant-website-tr' : 'за вашия елегантен уебсайт'
+        'elegant-website-tr' : 'за вашия елегантен уебсайт',
+        'services-tr': 'Услуги',
+        'website-dev-tr': 'Разработка на Уебсайт',
+        'elegant-design-tr' : 'Елегантент Дизайн',
+        'page-speed-tr' : 'Оптимизация на скоростта на страницата',
+        'automation-tr' : 'Автоматизирано тестване',
+        'testimonials-tr': 'Отзиви',
+        'testimonial1-tr' : '\u0020 Не бих се поколебал да препоръчам екипа на Ultra Site на всеки, който иска красив и зашеметяващ уебсайт. Топ! \u0020',
+        'testimonial2-tr' : '\u0020 Работя в строителството от години и с течение на времето трябваше да имам собствен уебсайт, за да рекламирам услугите си. Доверих се нa Ultra  Site и аз съм много щастлив. \u0020',
+        'testimnonial3-tr' : '\u0020 Методични, професионалисти и надеждни. Ultra Site са много лесно се работи с тях и са много надеждни. Бих ги препоръчала.\u0020',
+        'blog-article-tr' : 'Блог статии'
     }
 };
 

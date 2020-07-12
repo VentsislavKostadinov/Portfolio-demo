@@ -26,18 +26,11 @@ $(document).ready(function() {
             btn.css({'display': 'none'});
         }
 
-        /* btn.on('click', function(e) {
-             e.preventDefault();
-             $('html, body').animate({scrollTop:0}, 600);
-             return false;
-         });  */
-        //document.body.scrollTop = 0;
-        // document.documentElement.scrollTop = 0;
-
         btn.on('click', function (e) {
 
             e.preventDefault();
          window.scrollTo({top: 0, behavior: 'smooth'});
+        
         });
     });
 
